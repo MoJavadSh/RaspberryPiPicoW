@@ -2,7 +2,7 @@
 ![Lang](https://img.shields.io/badge/Language-MicroPython-lightblue)
 
 - Thanks to [Dr. Payam Sanaee](https://example.com) for mentorship.
-- Inspired by [Awesome IoT Projects](https://github.com/awesome-iot).
+
  
 
 
