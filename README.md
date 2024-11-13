@@ -9,9 +9,9 @@
 
 ## Table of Contents
 - [Web Server](#web-server)
-- [Soon](#demo)
-- [Soon](#installation)
-- [Soon](#usage)
+- [Soon](#Soon)
+- [Soon](#Soon)
+- [Soon](#Soon)
 
 
 ## Web Server
