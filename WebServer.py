@@ -47,26 +47,161 @@ else:
 
 
 # HTML
-html = """<!DOCTYPE html>
-<html>
-<head>
+html = """
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>LED</title>
-</head>
-<body>
-    <h1>Control LEDs</h1>
-    <form action="/blue_on" method="POST">
-        <input type="submit" value="Turn Blue LED ON">
-    </form>
-    <form action="/blue_off" method="POST">
-        <input type="submit" value="Turn Blue LED OFF">
-    </form>
-    <form action="/red_on" method="POST">
-        <input type="submit" value="Turn Red LED ON">
-    </form>
-    <form action="/red_off" method="POST">
-        <input type="submit" value="Turn Red LED OFF">
-    </form>
-</body>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* General styles */
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #121212; /* Dark background */
+        color: #f5f5f5; /* Light text color */
+      }
+
+      header {
+        text-align: center;
+        padding: 20px;
+        background-color: #1f1f1f;
+        border-bottom: 2px solid #333;
+      }
+
+      h1 {
+        font-size: 2rem;
+        margin: 0;
+      }
+
+      main {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: row;
+        gap: 20px; /* Space between the two sections */
+      }
+
+      .section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px; /* Space between each part */
+        background-color: #b2f0e3;
+        padding: 20px;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 400px;
+      }
+
+      .part {
+        text-align: center;
+        padding: 20px;
+        border: 1px solid #333;
+        background-color: #f5f5f5;
+        color: #121212;
+        border-radius: 10px;
+      }
+
+      /* Red buttons for section 1 */
+      #button1,
+      #button2 {
+        padding: 20px;
+        font-size: 1.2rem;
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+
+      /* Blue buttons for section 2 */
+      #button3,
+      #button4 {
+        padding: 20px;
+        font-size: 1.2rem;
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        opacity: 0.8;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #1f1f1f;
+        border-top: 2px solid #333;
+      }
+
+      /* Responsive design */
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .section {
+          max-width: 100%;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Responsive Interactive Web Page</h1>
+    </header>
+
+    <main>
+      <div class="container">
+        <!-- First vertical section -->
+        <div class="section">
+          <div class="part">
+            <form action="/red_on" method="POST">
+              <button id="button1">Button 1</button>
+            </form>
+          </div>
+          <div class="part">
+            <form action="/red_off" method="POST">
+              <button id="button2">Button 2</button>
+            </form>
+          </div>
+          <div class="part" id="status1">Status: None</div>
+        </div>
+
+        <!-- Second vertical section -->
+        <div class="section">
+          <div class="part">
+            <form action="/blue_on" method="POST">
+              <button id="button3">Button 3</button>
+            </form>
+          </div>
+          <div class="part">
+            <form action="/blue_off" method="POST">
+              <button id="button4">Button 4</button>
+            </form>
+          </div>
+          <div class="part" id="status2">Status: None</div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Microprocessor Project by MohammadJavad Shahbazi</p>
+      <p>Master: Dr. Paiam Sanaee</p>
+    </footer>
+  </body>
 </html>
 """
 
