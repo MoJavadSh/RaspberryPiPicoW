@@ -1,7 +1,7 @@
 # RaspberryPi Pico W Projects
 ![Lang](https://img.shields.io/badge/Language-MicroPython-lightblue)
 
-- Thanks to [Dr. Payam Sanaee](https://example.com](https://research.iaun.ac.ir/pd/sanaee/HTMLShowResume_Background_Fa.php)) for mentorship.
+- Thanks to [Dr. Payam Sanaee](https://research.iaun.ac.ir/pd/sanaee/HTMLShowResume_Background_Fa.php) for mentorship.
 
  
 
